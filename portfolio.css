@@ -1,527 +1,218 @@
-/* .Landpage{
-    background-color: black;
-    display: block;
-    height: 100vh;
-    width:var(--s-full);
-}
-body{
-    background-color: rgb(221, 238, 250);
-    width:100%;
-    width:var(--s-full);
-
-}
-@keyframes para{
-    from{
-        margin:5vh -20vh;
-        opacity: 0;
-    }
-    to{
-        margin: 0vh;
-        opacity: 1;
-    }
-}
-.para:onload{
-    animation-name: para;
-animation-duration: 5s;}
-
-
-
-@keyframes section{
-    from{
-        height:10vh;
-    }
-    to{
-        height:80vh;
-    }
-}
-@keyframes btn{
-    from{margin-left: -50vh;}
-    to{
-        margin-left: 13vh;
-    }
-}
-.about:hover{animation-name: para; animation-duration: 3s;}
-.sections{    background-color: #039BE5;
-    width: 30%;
-    border-bottom: 5px solid aqua;
-    margin: 10px 20px;
-    text-align: center;
-    display: inline-grid;
-    height: 80vh;
-    border-radius: 80px;
-    animation: section 3s;
-    font-variant: discretionary-ligatures;
-}
-.msg{    background-color: rgb(72, 22, 211);
-    width: 70%;
-    margin: 10px 5px;
-    height: 80vh;
-    text-align:justify;
-    justify-content: center;
-    font-size: xx-large;
-    border-radius: 50px;
-}
-.about{
-    height: 100vh;
-    background-color: rgb(225, 254, 210);
-}
-.name{
-    font-size: 70px;
-
-    font-style: italic;
-    margin:5vh 39vh;
-}
-
-.btn{
-    width: 200px;
-    height: 51px;
-    font-family: cursive;
-    margin-left: 13vh;
-    background-color: #4FC3F7;
-    font-size: x-large;
-    border: brown;
-    border-color: blueviolet;
-    margin: auto;
-    border-bottom: 5px solid black;
-    border-radius: 20px;
-    border: -2px solid mediumslateblue;
-    animation-name: btn;
-    animation-duration: 3s;
-}
-.btn:hover{
-    background-color: cyan;
-    font-size: 30px;
-}
-#contact{
-    justify-content: center;
-    text-align: center;
-    margin-left: 30vh;
-    border-radius: 20px;
-    font-size: larger;
-    background-color: lightskyblue;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-bottom: 7px solid rgb(12, 4, 4);
-    border: '3px solid lightgreen';
-margin-left: 37vh;
-border-radius: 30px;}
-
-#contact:hover{
-        border:5px solid rgb(215, 39, 39);
-    }
-.skillset{
-    display:flexbox;
-
-}
-
-em{
-    color:palevioletred;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.skill{
-    background-color: aquamarine;
-    height: 20vh;
-    width: 40vh;
-    margin: 5vh;
-    font-size: xx-large;
-    justify-content:space-around;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 20px;
-}
-#about{
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.navbar{
-    display: flex;
-    height: 9vh;
-    background-color: beige;
-    width:var(--s-full);
-}
-.list{
-    list-style: none;
-    display: flex;
-    max-width: 100%;
-    text-decoration: none;
-    color: cornflowerblue;
-}
-.item{
-    font-size: 1.4rem;
-    text-decoration: none;
-    padding: 4px;
-    
-    margin: 0px 30px;
-}
-.item:hover{
-    border:2px solid black;
-    border-radius: 10px;
-} */
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    line-height: 1.6;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-#img{
-    width: 10rem;
-    margin: -16px 16px;
-}
-
-.navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 15px 0;
-    height: 4.2rem;
-}
-
-.navbar .box {
-    float: left;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    margin-left: 20px;
-}
-
-.navbar .list {
-    float: right;
-    margin-right: 20px;
-}
-
-.navbar .list .menu {
-    list-style: none;
-}
-
-.navbar .list .menu .item {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.navbar .list .menu .item a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.about {
-    
-    padding: 50px;
-}
-.about h1:hover{transition: transform 0.3s ease;
-
-}
-
-.about h1 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.about p {
-    font-size: 25px;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-.about img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
-.skillset {
-    background-color: #f9f9f9;
-    padding: 50px;
-}
-
-.skillset h1 {
-    font-size: 36px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.welcome-message{
-    margin: 0;
-    padding: 0;
-    font-family: math;
-    box-sizing: border-box;
-}
-
-.skills {
-    display: flex;
-    justify-content: center;
-}
-
-.category {
-    margin-right: 40px;
+/********** Template CSS **********/
+:root {
+  --primary: #00B87B;
+  --secondary: #314355;
+  --light: #F2F2F2;
+  --dark: #2C3E50;
 }
 
-.category h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease-out, visibility 0s linear .5s;
+  z-index: 99999;
 }
 
-.skills-list {
-    list-style: none;
+#spinner.show {
+  transition: opacity .5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
 }
 
-.skill {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    font-size: 16px;
+@media (max-width: 991.98px) {
+  .sticky-lg-top.vh-100 {
+    height: 100% !important;
+  }
 }
 
-.projects {
-    background-color: #fff;
-    padding: 50px;
+.fw-semi-bold {
+  font-weight: 600;
 }
 
-.projects h1 {
-    font-size: 36px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 40px;
+.fw-medium {
+  font-weight: 500;
 }
 
-.project-list ul {
-    list-style: none;
-    padding: 0;
+.btn-square {
+  width: 40px;
+  height: 40px;
 }
 
-.project-list ul li {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 20px;
+.btn-sm-square {
+  width: 30px;
+  height: 30px;
 }
 
-.project-list ul li strong {
-    font-weight: bold;
-    color: #333;
+.btn-lg-square {
+  width: 50px;
+  height: 50px;
 }
 
-.project-list ul li em {
-    font-style: italic;
-    color: #777;
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-/* Add these styles to your existing CSS file */
 
-.homepage {
-    background-color: #f4f4f4;
-    padding: 100px 0;
-    text-align: center;
+.btn.btn-primary {
+  color: #FFFFFF;
 }
 
-.welcome-message h1 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
+.typed-cursor {
+  font-size: 25px;
+  color: var(--light);
 }
 
-.welcome-message h2 {
-    font-size: 24px;
-    color: #555;
-    margin-bottom: 40px;
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 1;
+  font-size: 30px;
+  right: 30px;
+  bottom: 30px;
+  transition: background 0.5s;
+  z-index: 11;
 }
 
-.social-media-buttons {
-    margin-top: 20px;
+.back-to-top i {
+  color: var(--primary);
 }
 
-.social-media-buttons .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: #fff;
-    text-decoration: none;
-    margin-right: 10px;
-    border-radius: 5px;
-    font-size: 16px;
+.back-to-top i:hover {
+  color: var(--dark);
 }
 
-.social-media-buttons .button:last-child {
-    margin-right: 0;
+.back-to-top {
+  -webkit-animation: action 1s infinite alternate;
+  animation: action 1s infinite alternate;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-main {
-    padding: 20px;
-}
-
-.project-section {
-    margin-bottom: 40px;
-}
+@-webkit-keyframes action {
+  0% {
+    transform: translateY(0);
+  }
 
-.project {
-    display: flex;
-    margin-bottom: 20px;
+  100% {
+    transform: translateY(-15px);
+  }
 }
 
-.project img {
-    width: 200px;
-    height: 150px;
-    margin-right: 20px;
-    object-fit: cover;
-}
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
 
-.project-info {
-    flex-grow: 1;
+  100% {
+    transform: translateY(-15px);
+  }
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-.typing-animation {
-    text-align: center;
-    padding-top: 50px;
+.title {
+  position: relative;
 }
 
-.typing-text {
-    display: inline-block;
-    overflow: hidden; /* Ensure text doesn't overflow */
-    border-right: .15em solid orange; /* Cursor style */
-    white-space: nowrap; /* Prevents text from wrapping */
-    margin: 0 auto; /* Centers the text */
-    letter-spacing: .15em; /* Letter spacing */
-    animation: typing 5s steps(40, end), blink-caret .75s step-end infinite; /* Animation settings */
+.title::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  bottom: -4px;
+  left: 0;
+  border: 2px solid var(--light);
+  border-radius: 10px;
 }
 
-/* Keyframes for typing animation */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+.title::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  bottom: 0;
+  left: 15px;
+  border-radius: 2px;
+  background: var(--light);
 }
 
-/* Keyframes for caret blinking animation */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
+.progress {
+  height: 5px;
 }
-
-@keyframes move-left{
-    from{
-        opacity: 0;
-    }
-    to{opacity: 1;
-}}
-
-.l1:hover{
-    animation: move-left;
-    animation-duration: 3s;
-    transition:transform 0.5s ease;
 
+.progress .progress-bar {
+  width: 0px;
+  transition: 2s;
 }
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+.service-item {
+  padding: 30px;
+  text-align: center;
+  background: var(--secondary);
 }
 
-/* Skillset section styles */
-.skillset {
-    background-color: #fff;
-    padding: 40px 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+.service-item i {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light);
+  color: var(--primary);
+  transition: .5s;
 }
 
-.skillset h1 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 30px;
+.service-item:hover i {
+  background: var(--primary);
+  color: var(--light);
 }
 
-.skills {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.portfolio-item .portfolio-btn {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  font-size: 90px;
+  background: rgba(44, 62, 80, .9);
+  opacity: 0;
+  transition: .5s;
 }
 
-.category {
-    width: 45%;
-    margin-bottom: 20px;
+.portfolio-item:hover .portfolio-btn {
+  opacity: 1;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  top: 30px;
+  left: 30px;
 }
 
-.category h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
+.portfolio-item i {
+  opacity: 0;
+  transition: .3s;
+  transition-delay: .3s;
 }
 
-.skills-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.portfolio-item:hover i {
+  opacity: 1;
 }
 
-.skill {
-    background-color: #6d1be9;
-    padding: 10px 20px;
-    margin-bottom: 5px;
-    border-radius: 5px;
+.testimonial-carousel .owl-dots {
+  margin-top: 25px;
+  text-align: center;
 }
 
-/* Presentation section styles */
-.presentation {
-    margin-top: 50px;
-    text-align: center;
+.testimonial-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 15px;
+  height: 15px;
+  background: var(--light);
 }
 
-.presentation iframe {
-    width: 100%;
-    max-width: 800px;
-    border: none;
-}
-.side-text{
-    margin:auto;
-    font-size: 3rem;
-    text-align: center;
+.testimonial-carousel .owl-dot.active {
+  background: var(--primary);
 }
-
-
