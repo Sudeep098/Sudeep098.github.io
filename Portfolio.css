@@ -238,7 +238,7 @@
     width:330px;
     flex-direction: column;
 }
-body{
+.game{
     background-repeat: no-repeat;
     background-size: 100%;
 
