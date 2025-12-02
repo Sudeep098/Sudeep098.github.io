@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sudeep Shah — Portfolio</title>
+  <meta name="description" content="Portfolio of Sudeep Shah — B.Sc. (Hons.) Computer Science student and Junior Software Developer. Skills: Python, Java, Web Development, MySQL, Data Analysis.">
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    :root{--bg:#0f1724;--card:#0b1320;--muted:#94a3b8;--accent:#3b82f6;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:linear-gradient(180deg,#071023 0%, #071826 100%);color:#e6eef8;line-height:1.45}
+    .container{max-width:1100px;margin:36px auto;padding:24px}
+    .grid{display:grid;grid-template-columns:320px 1fr;gap:24px}
+    /* Sidebar */
+    .card{background:var(--card);border-radius:12px;padding:20px;box-shadow:0 6px 22px rgba(2,6,23,0.6);overflow:hidden}
+    .avatar{width:100%;height:320px;object-fit:cover;border-radius:8px;background:linear-gradient(135deg,#0b1220,#112233);display:flex;align-items:center;justify-content:center;color:var(--muted)}
+    h1.name{font-size:1.6rem;margin:16px 0 6px;color:#fff}
+    .role{color:var(--muted);font-weight:600;margin-bottom:12px}
+    .socials{display:flex;gap:8px;margin:12px 0}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:8px;text-decoration:none;border:1px solid rgba(255,255,255,0.04)}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#60a5fa);color:#072036;font-weight:600}
+    .info{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+    .muted{color:var(--muted);font-size:0.9rem}
+
+    /* Main */
+    main{padding:6px}
+    section{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:18px;border-radius:10px;margin-bottom:18px}
+    h2{margin:0 0 10px;color:#dbeafe}
+    p.lead{color:var(--muted);margin:0 0 12px}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+    /* Skills */
+    .skill{margin-bottom:12px}
+    .skill .label{display:flex;justify-content:space-between;font-size:0.95rem}
+    .bar{height:10px;background:var(--glass);border-radius:999px;overflow:hidden;margin-top:6px}
+    .bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#22c1c3)}
+
+    /* Timeline */
+    .timeline{border-left:2px solid rgba(255,255,255,0.04);padding-left:16px}
+    .timeline-item{margin-bottom:14px;padding-left:14px}
+    .project-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    .project{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px}
+    .project a{color:#bfdbfe;text-decoration:none}
+
+    /* Contact */
+    .contact-row{display:flex;gap:12px;flex-wrap:wrap}
+    footer{text-align:center;color:var(--muted);font-size:0.9rem;margin-top:18px}
+
+    /* Responsive */
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.avatar{height:220px}} 
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="grid">
+      <!-- SIDEBAR -->
+      <aside class="card" aria-labelledby="profile-name">
+        <div class="avatar" role="img" aria-label="Profile photo placeholder">
+          <!-- Replace with real image 'pic.png' if available -->
+          <div>
+            <svg width="96" height="96" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="3.2" stroke="#94a3b8" stroke-width="1.2"/><path d="M3 20c1.5-4 5-6 9-6s7.5 2 9 6" stroke="#94a3b8" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+
+        <h1 id="profile-name" class="name">Sudeep Shah</h1>
+        <div class="role">B.Sc. (Hons.) Computer Science • Junior Software Developer</div>
+
+        <div class="socials">
+          <a class="btn" href="https://github.com/Sudeep098" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/sudeep-shah" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+
+        <div class="info">
+          <div>
+            <div class="muted">Location</div>
+            <div>New Delhi, India</div>
+          </div>
+          <div>
+            <div class="muted">Phone</div>
+            <div>+91 93540 40454</div>
+          </div>
+          <div>
+            <div class="muted">Email</div>
+            <div><a href="mailto:sudeep90098@gmail.com" style="color:inherit;text-decoration:none">sudeep90098@gmail.com</a></div>
+          </div>
+          <div>
+            <div class="muted">Freelance</div>
+            <div>Available</div>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;display:flex;gap:8px">
+          <a class="btn primary" href="Sudeep-Resume.pdf" download><i class="fa-solid fa-download"></i> Download CV</a>
+          <a class="btn" href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </div>
+      </aside>
+
+      <!-- MAIN -->
+      <main>
+        <section aria-labelledby="about-heading">
+          <h2 id="about-heading">About</h2>
+          <p class="lead">Motivated Computer Science student with solid foundations in programming, web development and data analysis. Experienced through a Junior Software Developer diploma and multiple project contributions. I enjoy building clean, maintainable code and learning new technologies to solve practical problems.</p>
+
+          <div class="two-col">
+            <div>
+              <strong>Education</strong>
+              <ul class="muted" style="margin-top:8px;line-height:1.6">
+                <li>B.Sc. (Hons.) Computer Science — Delhi University (2024–2027)</li>
+                <li>Junior Software Development Diploma — WCSC Sun Foundation (2023–24)</li>
+                <li>Class XII, CBSE (2023) · Class X, CBSE (2021)</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Core strengths</strong>
+              <ul class="muted" style="margin-top:8px;line-height:1.6">
+                <li>Problem solving & algorithms</li>
+                <li>Full-stack web development (HTML, CSS, JS, PHP)</li>
+                <li>Data handling with MySQL, Pandas</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="skills-heading">
+          <h2 id="skills-heading">Technical Skills</h2>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px">
+            <div>
+              <div class="skill">
+                <div class="label"><span>Python</span><span>95%</span></div>
+                <div class="bar"><i style="width:95%"></i></div>
+              </div>
+              <div class="skill">
+                <div class="label"><span>Web: HTML • CSS • JavaScript</span><span>90%</span></div>
+                <div class="bar"><i style="width:90%"></i></div>
+              </div>
+              <div class="skill">
+                <div class="label"><span>Java</span><span>85%</span></div>
+                <div class="bar"><i style="width:85%"></i></div>
+              </div>
+            </div>
+            <div>
+              <div class="skill">
+                <div class="label"><span>React JS</span><span>90%</span></div>
+                <div class="bar"><i style="width:90%"></i></div>
+              </div>
+              <div class="skill">
+                <div class="label"><span>MySQL</span><span>90%</span></div>
+                <div class="bar"><i style="width:90%"></i></div>
+              </div>
+              <div class="skill">
+                <div class="label"><span>Data Tools: Pandas • NumPy • Excel</span><span>80%</span></div>
+                <div class="bar"><i style="width:80%"></i></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="experience-heading">
+          <h2 id="experience-heading">Education & Experience</h2>
+          <div class="timeline" style="margin-top:12px">
+            <div class="timeline-item">
+              <strong>Junior Software Developer Diploma — WCSC Sun Foundation</strong>
+              <div class="muted">2023 — 2024</div>
+              <p class="muted" style="margin-top:6px">Completed a 6-month program covering Python, Java, C and MySQL. Participated in project-based learning to build real-world applications and improve problem-solving & implementation skills.</p>
+            </div>
+
+            <div class="timeline-item">
+              <strong>Software Development Internship — Coding Samurai</strong>
+              <div class="muted">1 month internship (Java projects)</div>
+              <p class="muted" style="margin-top:6px">Built small apps such as a TODO list, interactive record management and a file-based editor to apply Java concepts in practice.</p>
+            </div>
+
+            <div class="timeline-item">
+              <strong>B.Sc. (Hons.) Computer Science — Delhi University</strong>
+              <div class="muted">2024 — 2027 (ongoing)</div>
+              <p class="muted" style="margin-top:6px">Undergraduate program focusing on core CS topics and software engineering fundamentals.</p>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="projects-heading">
+          <h2 id="projects-heading">Projects</h2>
+          <div class="project-list" style="margin-top:10px">
+            <article class="project">
+              <h3>Automated Attendance Monitoring System</h3>
+              <p class="muted">Contributed to UI and backend integration for a 3-factor smart attendance solution.</p>
+            </article>
+
+            <article class="project">
+              <h3>Smart Enterprise Modernization Platform</h3>
+              <p class="muted">Implemented UI components, backend endpoints and DB schema for workflow automation.</p>
+            </article>
+
+            <article class="project">
+              <h3>Mobile EHR Companion (SIH)</h3>
+              <p class="muted">Developed offline-first data modules and cloud sync for community health workers.</p>
+            </article>
+
+            <article class="project">
+              <h3>Anime T-Shirt Customization Website</h3>
+              <p class="muted">Mini e‑commerce site using HTML/CSS/JS with customization options.</p>
+              <p style="margin-top:8px"><a href="https://github.com/Sudeep098/To-Do" target="_blank">View sample code on GitHub</a></p>
+            </article>
+
+            <article class="project">
+              <h3>OTP Login Authentication System</h3>
+              <p class="muted">Built mobile OTP verification with API integration and session handling.</p>
+            </article>
+
+            <article class="project">
+              <h3>Tic-Tac-Toe Web Game</h3>
+              <p class="muted">Responsive browser game built with JavaScript.</p>
+            </article>
+          </div>
+        </section>
+
+        <section aria-labelledby="certs-heading">
+          <h2 id="certs-heading">Certifications & Activities</h2>
+          <ul class="muted" style="margin-top:8px">
+            <li>IBM SkillsBuild – Professional Skills</li>
+            <li>Junior Software Developer — Sun Foundation</li>
+            <li>Smart India Hackathon — Participant</li>
+            <li>NIT Delhi Hackathon — Codeslayer 2025 Certified</li>
+          </ul>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+          <h2 id="contact-heading">Contact</h2>
+          <p class="lead">I'm open to internships, collaborations and freelance work. The fastest way to reach me is by email or LinkedIn.</p>
+          <div class="contact-row">
+            <a class="btn" href="mailto:sudeep90098@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+            <a class="btn" href="tel:+919354040454"><i class="fa-solid fa-phone"></i> Call</a>
+            <a class="btn" href="https://github.com/Sudeep098" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/sudeep-shah" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          </div>
+        </section>
+
+        <footer>
+          <div>© <span id="year"></span> Sudeep Shah — Portfolio</div>
+        </footer>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    // current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
